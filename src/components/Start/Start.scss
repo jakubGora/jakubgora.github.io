@@ -1,0 +1,178 @@
+.Start {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(24, 19, 19);
+
+  user-select: none;
+  max-width: 100%;
+
+  white-space: nowrap;
+  overflow-x: hidden;
+  h1 {
+    z-index: 10;
+    position: fixed;
+    pointer-events: none;
+    top: 20vh;
+    left: 15vw;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-weight: 800;
+    font-size: 5rem;
+    color: white;
+    line-height: 5rem;
+    strong {
+      font-size: 6rem;
+      color: rgb(255, 47, 47);
+      text-shadow: -3px -1px 1px rgb(255, 255, 255);
+      line-height: 5rem;
+    }
+
+    animation: fadeIn 1s;
+  }
+  span {
+    transition: 0.5s ease;
+  }
+  span:hover {
+    color: red;
+    text-shadow: 0 0 0.5rem red;
+  }
+  p {
+    animation: fadeIn 1s;
+    font-size: 2rem;
+    color: gray;
+    letter-spacing: 0.6rem;
+  }
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+
+    .ef {
+      display: block;
+      position: relative;
+      height: 2.5vmax;
+      overflow: hidden;
+      width: 2.5vmax;
+      border-radius: 50%;
+
+      transition: 1s;
+    }
+    .ef:hover {
+      transition: 0s;
+      transform: scale(1.4);
+      z-index: 5;
+      box-shadow: 0 0 5px rgb(255, 47, 47), 0 0 10px rgb(255, 47, 47),
+        0 0 15px rgb(255, 47, 47), 0 0 20px rgb(255, 47, 47),
+        0 0 25px rgb(255, 47, 47), 0 0 30px rgb(255, 47, 47),
+        0 0 35px rgb(255, 47, 47), 0 0 40px rgb(255, 47, 47),
+        0 0 45px rgb(255, 47, 47), 0 0 50px rgb(255, 47, 47);
+    }
+    .ef::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(255, 47, 47);
+      box-shadow: 0 0 10px rgb(255, 47, 47), 0 0 20px rgb(255, 47, 47),
+        0 0 30px rgb(255, 47, 47), 0 0 40px rgb(255, 47, 47),
+        0 0 50px rgb(255, 47, 47), 0 0 60px rgb(255, 47, 47),
+        0 0 70px rgb(255, 47, 47), 0 0 80px rgb(255, 47, 47),
+        0 0 90px rgb(255, 47, 47), 0 0 100px rgb(255, 47, 47);
+      border-radius: 50%;
+      transition: 1s;
+      transform: scale(0%);
+    }
+    .ef:hover::before {
+      transition: 0s;
+      transform: scale(1.4);
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .btn {
+    width: 17rem;
+    height: 4rem;
+    pointer-events: painted;
+    z-index: 6;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+    border: 0.1rem solid red;
+    cursor: pointer;
+
+    background-color: rgba(250, 235, 215, 0);
+    p {
+      margin: 0;
+      width: 15rem;
+      font-weight: 100;
+      text-decoration: none;
+      font-size: 1.4rem;
+      padding: 0;
+      line-height: 1.5rem;
+      z-index: 7;
+      color: white;
+      overflow: hidden;
+      letter-spacing: normal;
+    }
+  }
+  .btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0rem;
+    left: 0;
+    width: 0rem;
+    height: 4rem;
+    background-color: red;
+    transition: 1s;
+  }
+  .btn:hover::before {
+    width: 17rem;
+  }
+  h2 {
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    animation: float 2s linear infinite;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    transform: translateX(-100vw);
+    letter-spacing: 20rem;
+    font-size: 15rem;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0%) translateX(-50%);
+  }
+  50% {
+    transform: translateY(20%) translateX(-50%);
+  }
+  100% {
+    transform: translateY(0%) translateX(-50%);
+  }
+}

@@ -1,0 +1,123 @@
+nav {
+  background-color: #222222;
+  height: 100vh;
+  width: 8rem;
+  min-width: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav .logo {
+  width: 100%;
+  height: 10rem;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .logo strong {
+  font-size: 5rem;
+  color: #ff2f2f;
+  text-shadow: -3px -1px 1px white;
+  line-height: 5rem;
+}
+
+nav .logo p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+nav .logo p:nth-of-type(2) {
+  color: gray;
+  font-size: 0.7rem;
+}
+
+nav .content {
+  color: #8b8b8b;
+  width: 100%;
+}
+
+nav .content a:first-of-type {
+  border-top: 1px solid #383838;
+}
+
+nav .content a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 4rem;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid #383838;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  font-size: 1.2rem;
+}
+
+nav .content a:hover {
+  text-shadow: 0 0 1rem #ff2f2f;
+  color: #ff2f2f;
+  font-size: 1.5rem;
+}
+
+nav .socials {
+  width: 100%;
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .socials div {
+  margin: 1rem;
+  color: gray;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+nav .socials div:hover {
+  color: #ff2f2f;
+  -webkit-filter: drop-shadow(0 0 0.5rem #ff2f2f);
+          filter: drop-shadow(0 0 0.5rem #ff2f2f);
+}
+/*# sourceMappingURL=Nav.css.map */
