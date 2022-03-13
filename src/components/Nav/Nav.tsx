@@ -14,13 +14,13 @@ function Nav() {
           <p>Frontend Developer</p>
         </div>
         <div className="content">
-          <Link to="/">start</Link>
+          <Link to="/">Start</Link>
 
-          <Link to="/About">o mnie</Link>
+          <Link to="/About">O mnie</Link>
 
-          <Link to="Skills">my skills</Link>
+          <Link to="Skills">Portfolio</Link>
 
-          <Link to="Contact">kontakt</Link>
+          <Link to="Contact">Kontakt</Link>
         </div>
         <div className="socials">
           <div className="git">

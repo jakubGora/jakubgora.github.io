@@ -1,0 +1,66 @@
+.About {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #181313;
+  -webkit-box-shadow: 4rem 0 4rem black;
+          box-shadow: 4rem 0 4rem black;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.About .content {
+  width: 50%;
+  min-width: 450px;
+  padding-right: 5rem;
+}
+
+.About .content h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.About .content p {
+  font-size: 1.2rem;
+  font-weight: 100;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.About .ilustr {
+  height: 40vh;
+}
+
+.About .ilustr img {
+  -webkit-box-shadow: inset 2px 0 0.5rem black;
+          box-shadow: inset 2px 0 0.5rem black;
+  width: 100%;
+  height: 100%;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+    letter-spacing: 20rem;
+    font-size: 15rem;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+    letter-spacing: 20rem;
+    font-size: 15rem;
+  }
+}
+/*# sourceMappingURL=About.css.map */
