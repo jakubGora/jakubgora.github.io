@@ -40,8 +40,6 @@
 }
 
 .About .ilustr img {
-  -webkit-box-shadow: inset 2px 0 0.5rem black;
-          box-shadow: inset 2px 0 0.5rem black;
   width: 100%;
   height: 100%;
 }

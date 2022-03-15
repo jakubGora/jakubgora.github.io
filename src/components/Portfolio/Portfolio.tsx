@@ -5,6 +5,7 @@ import {
   faArrowAltCircleLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
+import { useEffect } from "react";
 
 function Portfolio() {
   return (
