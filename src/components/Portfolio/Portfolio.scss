@@ -13,7 +13,7 @@
 
   .title {
     font-weight: 800;
-    font-size: 5rem;
+    font-size: 3rem;
     color: white;
     padding: 2rem;
     line-height: 5rem;
@@ -28,13 +28,14 @@
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+
     .project {
       flex-grow: 1;
       display: flex;
       min-width: 700px;
       align-items: center;
+      flex-direction: row;
       justify-content: center;
-      flex-wrap: wrap;
 
       width: calc(100vw - 8rem);
       color: white;
@@ -73,6 +74,7 @@
           }
         }
         .demo {
+          cursor: pointer;
           height: 10rem;
           width: 10rem;
           display: flex;
@@ -91,19 +93,20 @@
           animation: bounce 2s infinite;
         }
       }
-      object {
+      img.object {
         background-color: white;
         height: 100%;
         flex-grow: 3;
+        object-fit: cover;
         min-width: 400px;
         height: 100vh;
-        filter: brightness(50%) blur(2px);
+        object-position: left;
         transition: 1s ease;
       }
-      object:hover {
-        filter: brightness(100%) blur(0);
-      }
     }
+  }
+  a {
+    color: black;
   }
 }
 @keyframes bounce {

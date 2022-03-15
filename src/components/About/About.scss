@@ -11,12 +11,87 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   .content {
-    width: 50%;
-    min-width: 450px;
-    padding-right: 5rem;
+    width: 100%;
+
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .btns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    .btn {
+      position: relative;
+
+      width: 17rem;
+      height: 4rem;
+      z-index: 6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      border: 0.1rem solid red;
+      cursor: pointer;
+      margin-top: 3rem;
+      text-decoration: none !important;
+      a,
+      p {
+        font-weight: 100;
+        font-size: 1.4rem;
+        z-index: 6;
+        text-decoration: none !important;
+      }
+    }
+    .btn.cv {
+      margin-left: 1rem;
+      border: 0.1rem solid rgb(13, 158, 255);
+    }
+    .btn.cv::before {
+      background-color: rgb(13, 158, 255);
+    }
+    .btn.cv:hover::before {
+      width: calc(100% + 3px);
+    }
+    .btn::before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0rem;
+      height: 4rem;
+      transform: translateY(2px) translateX(-2px);
+      background-color: red;
+      transition: 1s;
+    }
+    .btn:hover::before {
+      width: 17rem;
+    }
+    div {
+      flex-grow: 1;
+      width: 50%;
+    }
+    .ilustr {
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
     h2 {
       font-size: 3rem;
+      padding-top: 2rem;
       margin-bottom: 2rem;
+      strong {
+        font-size: 6rem;
+        color: rgb(255, 47, 47);
+        text-shadow: -3px -1px 1px rgb(255, 255, 255);
+        line-height: 5rem;
+        letter-spacing: -1rem;
+      }
     }
     p {
       font-size: 1.2rem;
@@ -26,18 +101,20 @@
         "Helvetica Neue", sans-serif;
     }
   }
-  .ilustr {
-    height: 40vh;
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
 }
 @keyframes fadeIn {
   0% {
     transform: translateX(-100vw);
     letter-spacing: 20rem;
     font-size: 15rem;
+  }
+}
+
+@keyframes bars {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 0%;
   }
 }

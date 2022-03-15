@@ -76,3 +76,8 @@ nav {
     }
   }
 }
+@media screen and (max-width: 800px) {
+  nav {
+    display: none;
+  }
+}

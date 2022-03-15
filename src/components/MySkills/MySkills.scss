@@ -1,0 +1,147 @@
+$colorA: rgb(255, 53, 53);
+$colorB: rgb(216, 127, 44);
+$colorC: rgb(213, 216, 44);
+$colorD: rgb(44, 216, 67);
+$colorE: rgb(44, 176, 216);
+$colorF: rgb(162, 44, 216);
+
+.MySkills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  min-height: 40vh;
+  flex-wrap: wrap;
+
+  background-color: rgb(24, 19, 19);
+  box-shadow: 4rem 0 4rem black;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+
+    h2 {
+      font-size: 3rem;
+      padding-top: 2rem;
+      margin-bottom: 2rem;
+      strong {
+        font-size: 6rem;
+        color: rgb(255, 47, 47);
+        text-shadow: -3px -1px 1px rgb(255, 255, 255);
+        line-height: 5rem;
+        letter-spacing: -1rem;
+      }
+    }
+    p {
+      font-size: 1.2rem;
+      font-weight: 100;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    }
+    .skillImgs {
+      width: calc(6 * 8rem);
+      height: 8rem;
+      overflow: hidden;
+      display: block;
+      position: relative;
+      div {
+        display: flex;
+        flex-direction: row;
+        animation: slide 10s infinite linear;
+        img {
+          width: 8rem;
+          height: 8rem;
+        }
+      }
+    }
+    .skillImgs::before {
+      content: "";
+      display: block;
+      position: absolute;
+
+      width: calc(6 * 8rem);
+      height: 8rem;
+      z-index: 7;
+      box-shadow: inset 5px 0 1rem black;
+    }
+    .skillImgs::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(6 * 8rem);
+      height: 8rem;
+      z-index: 10;
+      transform: translateY(-100%);
+      box-shadow: inset 0px 5px 1rem black;
+    }
+  }
+  .skills {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    min-width: 30rem;
+    .skill {
+      width: 70%;
+      h3 {
+        font-size: 1.2rem;
+      }
+      .bar {
+        margin-bottom: 1rem;
+        height: 0.5rem;
+        width: 100%;
+        background-color: rgb(12, 12, 12);
+        .percent {
+          height: 100%;
+
+          animation: bars 3s;
+        }
+      }
+    }
+    .skill:nth-of-type(1n) .bar .percent {
+      background-color: $colorA;
+      box-shadow: 0 0 1rem $colorA;
+    }
+    .skill:nth-of-type(2n) .bar .percent {
+      background-color: $colorB;
+      box-shadow: 0 0 1rem $colorB;
+    }
+    .skill:nth-of-type(3n) .bar .percent {
+      background-color: $colorC;
+      box-shadow: 0 0 1rem $colorC;
+    }
+    .skill:nth-of-type(4n) .bar .percent {
+      background-color: $colorD;
+      box-shadow: 0 0 1rem $colorD;
+    }
+    .skill:nth-of-type(5n) .bar .percent {
+      background-color: $colorE;
+      box-shadow: 0 0 1rem $colorE;
+    }
+    .skill:nth-of-type(6n) .bar .percent {
+      background-color: $colorF;
+      box-shadow: 0 0 1rem $colorF;
+    }
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translate3d(-0rem, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-48rem, 0, 0);
+  }
+}

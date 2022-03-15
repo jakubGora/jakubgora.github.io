@@ -4,10 +4,16 @@ import {
   faArrowAltCircleRight,
   faArrowAltCircleLeft,
 } from "@fortawesome/free-solid-svg-icons";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
+import { faPaperclip } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
 
 function Portfolio() {
+  const canie = require("../../img/canien.png");
+  const memo = require("../../img/memory.png");
+  const play = require("../../img/playapp.png");
+  const unsplash = require("../../img/unsplashapp.png");
+  const tie = require("../../img/tieapp.png");
+
   return (
     <div className="Portfolio">
       <div className="title">
@@ -33,7 +39,15 @@ function Portfolio() {
               <img src="https://img.icons8.com/color/96/000000/sass.png" />
               <img src="https://img.icons8.com/color/96/000000/api.png" />
             </div>
-            <div className="demo">
+            <div
+              onClick={() =>
+                window.open(
+                  "https://jakubgora.github.io/un-splash-app/",
+                  "_blank"
+                )
+              }
+              className="demo"
+            >
               <p>
                 {" "}
                 <br />
@@ -42,19 +56,16 @@ function Portfolio() {
               </p>
 
               <FontAwesomeIcon
-                icon={faArrowAltCircleRight}
+                icon={faPaperclip}
                 fontSize="3rem"
               ></FontAwesomeIcon>
             </div>
           </div>
 
-          <object
-            type="text/html"
-            data="https://jakubgora.github.io/un-splash-app/"
-          ></object>
+          <img className="object" src={unsplash}></img>
         </div>
         <div style={{ width: "50%" }} className="project">
-          <object type="text/html" data="https://jakubgora.pl/tie/"></object>
+          <img className="object" src={tie}></img>
           <div className="descr">
             {" "}
             <div>
@@ -74,7 +85,10 @@ function Portfolio() {
               <img src="https://img.icons8.com/color/96/000000/sass.png" />
               <img src="https://img.icons8.com/color/96/000000/google-firebase-console.png" />
             </div>
-            <div className="demo">
+            <div
+              onClick={() => window.open("https://jakubgora.pl/tie/", "_blank")}
+              className="demo"
+            >
               <p>
                 {" "}
                 <br />
@@ -83,14 +97,14 @@ function Portfolio() {
               </p>
 
               <FontAwesomeIcon
-                icon={faArrowAltCircleLeft}
+                icon={faPaperclip}
                 fontSize="3rem"
               ></FontAwesomeIcon>
             </div>
           </div>
         </div>
         <div style={{ width: "50%" }} className="project">
-          <object type="text/html" data="https://jakubgora.pl/play/"></object>
+          <img className="object" src={play}></img>
           <div className="descr">
             {" "}
             <div>
@@ -108,7 +122,12 @@ function Portfolio() {
               <img src="https://img.icons8.com/color/96/000000/sass.png" />
               <img src="https://img.icons8.com/color/96/000000/api.png" />
             </div>
-            <div className="demo">
+            <div
+              onClick={() =>
+                window.open("https://jakubgora.pl/play/", "_blank")
+              }
+              className="demo"
+            >
               <p>
                 {" "}
                 <br />
@@ -117,7 +136,7 @@ function Portfolio() {
               </p>
 
               <FontAwesomeIcon
-                icon={faArrowAltCircleLeft}
+                icon={faPaperclip}
                 fontSize="3rem"
               ></FontAwesomeIcon>
             </div>
@@ -138,7 +157,15 @@ function Portfolio() {
             <img src="https://img.icons8.com/ultraviolet/80/000000/react--v2.png" />
             <img src="https://img.icons8.com/color/96/000000/typescript.png" />
             <img src="https://img.icons8.com/color/96/000000/sass.png" />
-            <div className="demo">
+            <div
+              onClick={() =>
+                window.open(
+                  "https://jakubgora.github.io/memory-game/",
+                  "_blank"
+                )
+              }
+              className="demo"
+            >
               <p>
                 {" "}
                 <br />
@@ -147,19 +174,20 @@ function Portfolio() {
               </p>
 
               <FontAwesomeIcon
-                icon={faArrowAltCircleRight}
+                icon={faPaperclip}
                 fontSize="3rem"
               ></FontAwesomeIcon>
             </div>
           </div>
 
-          <object
-            type="text/html"
-            data="https://jakubgora.github.io/memory-game/"
-          ></object>
+          <img
+            style={{ objectPosition: "center" }}
+            className="object"
+            src={memo}
+          ></img>
         </div>
         <div className="project">
-          <object type="text/html" data="http://caninebossclub.pl/"></object>{" "}
+          <img className="object" src={canie}></img>
           <div className="descr">
             {" "}
             <div>
@@ -174,7 +202,10 @@ function Portfolio() {
             <img src="https://img.icons8.com/color/96/000000/javascript--v2.png" />
             <img src="https://img.icons8.com/color/96/000000/sass.png" />
             <img src="https://img.icons8.com/color/96/000000/google-firebase-console.png" />
-            <div className="demo">
+            <div
+              onClick={() => window.open("http://caninebossclub.pl/", "_blank")}
+              className="demo"
+            >
               <p>
                 {" "}
                 <br />
@@ -183,7 +214,7 @@ function Portfolio() {
               </p>
 
               <FontAwesomeIcon
-                icon={faArrowAltCircleLeft}
+                icon={faPaperclip}
                 fontSize="3rem"
               ></FontAwesomeIcon>
             </div>

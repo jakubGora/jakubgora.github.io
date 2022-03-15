@@ -120,4 +120,10 @@ nav .socials div:hover {
   -webkit-filter: drop-shadow(0 0 0.5rem #ff2f2f);
           filter: drop-shadow(0 0 0.5rem #ff2f2f);
 }
+
+@media screen and (max-width: 800px) {
+  nav {
+    display: none;
+  }
+}
 /*# sourceMappingURL=Nav.css.map */

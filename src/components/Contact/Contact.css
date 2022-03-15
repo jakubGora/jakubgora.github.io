@@ -52,6 +52,14 @@
   margin-bottom: 2rem;
 }
 
+.Contact .content h2 strong {
+  font-size: 6rem;
+  color: #ff2f2f;
+  text-shadow: -3px -1px 1px white;
+  line-height: 5rem;
+  letter-spacing: 0rem;
+}
+
 .Contact .content h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -229,6 +237,7 @@
   color: white;
   border: 0.1rem solid red;
   cursor: pointer;
+  margin-top: 1rem;
 }
 
 .Contact .content form .btn p {

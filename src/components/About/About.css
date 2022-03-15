@@ -19,29 +19,123 @@
 }
 
 .About .content {
+  width: 100%;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.About .content .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.About .content .btn {
+  position: relative;
+  width: 17rem;
+  height: 4rem;
+  z-index: 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  border: 0.1rem solid red;
+  cursor: pointer;
+  margin-top: 3rem;
+  text-decoration: none !important;
+}
+
+.About .content .btn a,
+.About .content .btn p {
+  font-weight: 100;
+  font-size: 1.4rem;
+  z-index: 6;
+  text-decoration: none !important;
+}
+
+.About .content .btn.cv {
+  margin-left: 1rem;
+  border: 0.1rem solid #0d9eff;
+}
+
+.About .content .btn.cv::before {
+  background-color: #0d9eff;
+}
+
+.About .content .btn.cv:hover::before {
+  width: calc(100% + 3px);
+}
+
+.About .content .btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0rem;
+  height: 4rem;
+  -webkit-transform: translateY(2px) translateX(-2px);
+          transform: translateY(2px) translateX(-2px);
+  background-color: red;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.About .content .btn:hover::before {
+  width: 17rem;
+}
+
+.About .content div {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   width: 50%;
-  min-width: 450px;
-  padding-right: 5rem;
+}
+
+.About .content .ilustr img {
+  height: 100%;
+  width: 100%;
 }
 
 .About .content h2 {
   font-size: 3rem;
+  padding-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.About .content h2 strong {
+  font-size: 6rem;
+  color: #ff2f2f;
+  text-shadow: -3px -1px 1px white;
+  line-height: 5rem;
+  letter-spacing: -1rem;
 }
 
 .About .content p {
   font-size: 1.2rem;
   font-weight: 100;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-}
-
-.About .ilustr {
-  height: 40vh;
-}
-
-.About .ilustr img {
-  width: 100%;
-  height: 100%;
 }
 
 @-webkit-keyframes fadeIn {
@@ -59,6 +153,24 @@
             transform: translateX(-100vw);
     letter-spacing: 20rem;
     font-size: 15rem;
+  }
+}
+
+@-webkit-keyframes bars {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 0%;
+  }
+}
+
+@keyframes bars {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 0%;
   }
 }
 /*# sourceMappingURL=About.css.map */

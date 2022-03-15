@@ -26,7 +26,7 @@
 
 .Portfolio .title {
   font-weight: 800;
-  font-size: 5rem;
+  font-size: 3rem;
   color: white;
   padding: 2rem;
   line-height: 5rem;
@@ -63,11 +63,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   width: calc(100vw - 8rem);
   color: white;
   -webkit-box-shadow: 0 0 1rem black;
@@ -133,6 +135,7 @@
 }
 
 .Portfolio .gallery .project .descr .demo {
+  cursor: pointer;
   height: 10rem;
   width: 10rem;
   display: -webkit-box;
@@ -161,23 +164,24 @@
   margin-bottom: 0.7rem;
 }
 
-.Portfolio .gallery .project object {
+.Portfolio .gallery .project img.object {
   background-color: white;
   height: 100%;
   -webkit-box-flex: 3;
       -ms-flex-positive: 3;
           flex-grow: 3;
+  -o-object-fit: cover;
+     object-fit: cover;
   min-width: 400px;
   height: 100vh;
-  -webkit-filter: brightness(50%) blur(2px);
-          filter: brightness(50%) blur(2px);
+  -o-object-position: left;
+     object-position: left;
   -webkit-transition: 1s ease;
   transition: 1s ease;
 }
 
-.Portfolio .gallery .project object:hover {
-  -webkit-filter: brightness(100%) blur(0);
-          filter: brightness(100%) blur(0);
+.Portfolio a {
+  color: black;
 }
 
 @-webkit-keyframes bounce {

@@ -81,7 +81,10 @@ const Contact: React.FC = () => {
         </GoogleMapReact>
       </div>
       <div className="content">
-        <h2>Skontaktuj się ze mną</h2>
+        <h2>
+          {" "}
+          <strong>S</strong>kontaktuj się ze mną
+        </h2>
         <div className="contact">
           <div>
             {" "}

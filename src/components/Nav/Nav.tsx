@@ -16,17 +16,27 @@ function Nav() {
         <div className="content">
           <Link to="/">Start</Link>
 
-          <Link to="/About">O mnie</Link>
+          <Link to="/about">O mnie</Link>
 
-          <Link to="Skills">Portfolio</Link>
+          <Link to="portfolio">Portfolio</Link>
 
-          <Link to="Contact">Kontakt</Link>
+          <Link to="contact">Kontakt</Link>
         </div>
         <div className="socials">
-          <div className="git">
+          <div
+            onClick={() =>
+              window.open("https://github.com/jakubGora", "_blank")
+            }
+            className="git"
+          >
             <FontAwesomeIcon icon={faGithub} fontSize="2rem" />
           </div>
-          <div className="fb">
+          <div
+            onClick={() =>
+              window.open("https://www.facebook.com/jakub.gora.395/", "_blank")
+            }
+            className="fb"
+          >
             <FontAwesomeIcon icon={faFacebookF} fontSize="2rem" />
           </div>
         </div>

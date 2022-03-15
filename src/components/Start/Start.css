@@ -192,24 +192,6 @@
           animation: float 2s linear infinite;
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
-    -webkit-transform: translateX(-100vw);
-            transform: translateX(-100vw);
-    letter-spacing: 20rem;
-    font-size: 15rem;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    -webkit-transform: translateX(-100vw);
-            transform: translateX(-100vw);
-    letter-spacing: 20rem;
-    font-size: 15rem;
-  }
-}
-
 @-webkit-keyframes float {
   0% {
     -webkit-transform: translateY(calc(-60vh)) translateX(calc(50vw - 100%));
@@ -237,6 +219,69 @@
   100% {
     -webkit-transform: translateY(calc(-60vh)) translateX(calc(50vw - 100%));
             transform: translateY(calc(-60vh)) translateX(calc(50vw - 100%));
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+    letter-spacing: 20rem;
+    font-size: 15rem;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+    letter-spacing: 20rem;
+    font-size: 15rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Start p {
+    font-size: 1.3rem;
+  }
+  .Start h1 {
+    margin-left: 2rem;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .Start h1 strong {
+    font-size: 5rem;
+  }
+  .Start .btn {
+    margin-top: 2rem;
+  }
+  @-webkit-keyframes float {
+    0% {
+      -webkit-transform: translateY(calc(-60vh)) translateX(calc(50vw - 50%));
+              transform: translateY(calc(-60vh)) translateX(calc(50vw - 50%));
+    }
+    50% {
+      -webkit-transform: translateY(calc(-65vh)) translateX(calc(50vw - 50%));
+              transform: translateY(calc(-65vh)) translateX(calc(50vw - 50%));
+    }
+    100% {
+      -webkit-transform: translateY(calc(-60vh)) translateX(calc(50vw - 50%));
+              transform: translateY(calc(-60vh)) translateX(calc(50vw - 50%));
+    }
+  }
+  @keyframes float {
+    0% {
+      -webkit-transform: translateY(calc(-60vh)) translateX(calc(50vw - 50%));
+              transform: translateY(calc(-60vh)) translateX(calc(50vw - 50%));
+    }
+    50% {
+      -webkit-transform: translateY(calc(-65vh)) translateX(calc(50vw - 50%));
+              transform: translateY(calc(-65vh)) translateX(calc(50vw - 50%));
+    }
+    100% {
+      -webkit-transform: translateY(calc(-60vh)) translateX(calc(50vw - 50%));
+              transform: translateY(calc(-60vh)) translateX(calc(50vw - 50%));
+    }
   }
 }
 /*# sourceMappingURL=Start.css.map */

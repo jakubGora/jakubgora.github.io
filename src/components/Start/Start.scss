@@ -156,6 +156,17 @@
     text-align: center;
     animation: float 2s linear infinite;
   }
+  @keyframes float {
+    0% {
+      transform: translateY(calc(-60vh)) translateX(calc(50vw - 100%));
+    }
+    50% {
+      transform: translateY(calc(-65vh)) translateX(calc(50vw - 100%));
+    }
+    100% {
+      transform: translateY(calc(-60vh)) translateX(calc(50vw - 100%));
+    }
+  }
 }
 @keyframes fadeIn {
   0% {
@@ -165,14 +176,32 @@
   }
 }
 
-@keyframes float {
-  0% {
-    transform: translateY(calc(-60vh)) translateX(calc(50vw - 100%));
+@media screen and (max-width: 800px) {
+  .Start {
+    p {
+      font-size: 1.3rem;
+    }
+    h1 {
+      margin-left: 2rem;
+      font-size: 3rem;
+      line-height: 3rem;
+      strong {
+        font-size: 5rem;
+      }
+    }
+    .btn {
+      margin-top: 2rem;
+    }
   }
-  50% {
-    transform: translateY(calc(-65vh)) translateX(calc(50vw - 100%));
-  }
-  100% {
-    transform: translateY(calc(-60vh)) translateX(calc(50vw - 100%));
+  @keyframes float {
+    0% {
+      transform: translateY(calc(-60vh)) translateX(calc(50vw - 50%));
+    }
+    50% {
+      transform: translateY(calc(-65vh)) translateX(calc(50vw - 50%));
+    }
+    100% {
+      transform: translateY(calc(-60vh)) translateX(calc(50vw - 50%));
+    }
   }
 }
