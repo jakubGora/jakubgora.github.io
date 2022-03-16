@@ -37,13 +37,14 @@
       border: 0.1rem solid red;
       cursor: pointer;
       margin-top: 3rem;
+
       text-decoration: none !important;
       a,
       p {
         font-weight: 100;
         font-size: 1.4rem;
         z-index: 6;
-        text-decoration: none !important;
+        text-decoration: underline white;
       }
     }
     .btn.cv {
@@ -98,6 +99,8 @@
     p {
       font-size: 1.2rem;
       font-weight: 100;
+      list-style: none;
+
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
         "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
         "Helvetica Neue", sans-serif;

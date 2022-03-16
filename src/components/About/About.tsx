@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./About.css";
 
 function About() {
@@ -33,12 +33,11 @@ function About() {
 
           <div className="btns">
             {" "}
-            <div
-              onClick={() => window.open("./portfolio", "_self")}
-              className="btn"
-            >
-              <a>Portfolio</a>
-            </div>
+            <Link to="/portfolio">
+              <div className="btn">
+                <p>Portfolio</p>
+              </div>
+            </Link>
             <div
               onClick={() =>
                 window.open(
