@@ -126,4 +126,10 @@ nav .socials div:hover {
     display: none;
   }
 }
+
+@media screen and (max-height: 800px) {
+  nav {
+    display: none;
+  }
+}
 /*# sourceMappingURL=Nav.css.map */

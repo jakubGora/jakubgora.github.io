@@ -81,3 +81,8 @@ nav {
     display: none;
   }
 }
+@media screen and (max-height: 800px) {
+  nav {
+    display: none;
+  }
+}

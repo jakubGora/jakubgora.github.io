@@ -10,6 +10,7 @@
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+
   .content {
     width: 100%;
 
@@ -22,6 +23,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-wrap: wrap;
       width: 100%;
     }
     .btn {

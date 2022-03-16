@@ -175,6 +175,27 @@
     font-size: 15rem;
   }
 }
+@media screen and (max-height: 800px) {
+  .Start {
+    h1 {
+      transform: translateY(-150%);
+    }
+    h2 {
+      transform: translateY(calc(-80vh)) translateX(calc(50vw - 100%));
+    }
+  }
+  @keyframes float {
+    0% {
+      transform: translateY(calc(-80vh)) translateX(calc(50vw - 100%));
+    }
+    50% {
+      transform: translateY(calc(-85vh)) translateX(calc(50vw - 100%));
+    }
+    100% {
+      transform: translateY(calc(-80vh)) translateX(calc(50vw - 100%));
+    }
+  }
+}
 
 @media screen and (max-width: 800px) {
   .Start {
@@ -209,6 +230,59 @@
   .Start {
     p {
       letter-spacing: normal;
+    }
+    h2 {
+      width: 10rem;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .Start {
+    p {
+      letter-spacing: normal;
+    }
+    h1 {
+      margin-left: 1rem;
+      font-size: 2rem;
+      line-height: 2rem;
+      strong {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+@media screen and (max-height: 500px) {
+  .Start {
+    p {
+      letter-spacing: normal;
+      font-size: 1.2rem;
+    }
+    .btn {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+    h1 {
+      margin-left: 2rem;
+      font-size: 2rem;
+      line-height: 2rem;
+      transform: translateY(-110%);
+      strong {
+        font-size: 3rem;
+      }
+      h2 {
+        transform: translateY(calc(-110vh)) translateX(calc(50vw + 30%));
+      }
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(calc(-110vh)) translateX(calc(50vw + 30%));
+      }
+      50% {
+        transform: translateY(calc(-115vh)) translateX(calc(50vw + 30%));
+      }
+      100% {
+        transform: translateY(calc(-110vh)) translateX(calc(50vw + 30%));
+      }
     }
   }
 }
