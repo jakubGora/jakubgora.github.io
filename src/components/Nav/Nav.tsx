@@ -14,6 +14,7 @@ function Nav({ setLoading }: INav) {
 
   useEffect(() => {
     setLoading(true);
+    window.scrollY = 0;
   }, [location.pathname]);
 
   return (
