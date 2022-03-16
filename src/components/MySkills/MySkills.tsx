@@ -1,19 +1,12 @@
-import { useEffect } from "react";
 import "./MySkills.css";
 
-interface IMySkills {
-  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-function MySkills({ setLoading }: IMySkills) {
-  useEffect(() => {
-    setLoading(true);
-  }, []);
-
+function MySkills() {
   return (
     <div className="MySkills">
       <div className="content">
-        <h2>Moje umiejętności</h2>
+        <h2>
+          <strong>M</strong>oje umiejętności
+        </h2>
         <div className="skillImgs">
           <div>
             {" "}

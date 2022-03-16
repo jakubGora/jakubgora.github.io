@@ -302,4 +302,13 @@
             transform: translateX(0) translateY(-100%);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .Contact .content h2 {
+    font-size: 2rem;
+  }
+  .Contact .content h2 strong {
+    font-size: 5rem;
+  }
+}
 /*# sourceMappingURL=Contact.css.map */

@@ -1,10 +1,21 @@
 import "./Nav.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faFacebookF, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { useEffect } from "react";
 
-function Nav() {
+interface INav {
+  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+function Nav({ setLoading }: INav) {
+  const location = useLocation();
+
+  useEffect(() => {
+    setLoading(true);
+  }, [location.pathname]);
+
   return (
     <>
       <nav>

@@ -2,18 +2,10 @@ import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./About.css";
 
-interface IAbout {
-  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-function About({ setLoading }: IAbout) {
+function About() {
   const imge = require("../../img/clip-programming.png");
 
   const loadSkills = () => {};
-
-  useEffect(() => {
-    console.log("asd");
-  }, []);
 
   return (
     <div className="About">

@@ -1,5 +1,11 @@
 import "./App.css";
-import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Link,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import Nav from "./components/Nav/Nav";
 import Start from "./components/Start/Start";
 import { useEffect, useRef, useState } from "react";
@@ -18,10 +24,6 @@ const App: React.FC = () => {
   const aboutRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
   const skillsRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    setLoading(true);
-  }, []);
 
   const scroll = (e: React.UIEvent<HTMLDivElement, UIEvent>) => {
     if (e.currentTarget.scrollTop > window.innerHeight / 2) {
@@ -45,10 +47,18 @@ const App: React.FC = () => {
     }
   };
 
+  useEffect(() => {
+    if (loading === true) {
+      setTimeout(() => {
+        setLoading(false);
+      }, 2000);
+    }
+  }, [loading]);
+
   return (
     <Router>
       <div className="App">
-        <Nav />
+        <Nav setLoading={setLoading} />
         {loading ? <Loading setLoading={setLoading} /> : ""}
         <div onScroll={(e) => scroll(e)} className="main">
           <Routes>
@@ -56,22 +66,16 @@ const App: React.FC = () => {
               path="/"
               element={
                 <div>
-                  <Start setLoading={setLoading} />
+                  <Start />
                   <div ref={aboutRef} className="elem">
-                    <div>
-                      {aboutActive ? <About setLoading={setLoading} /> : ""}
-                    </div>
+                    <div>{aboutActive ? <About /> : ""}</div>
                   </div>
 
                   <div ref={skillsRef} className="elem">
-                    <div>
-                      {skillsActive ? <MySkills setLoading={setLoading} /> : ""}
-                    </div>
+                    <div>{skillsActive ? <MySkills /> : ""}</div>
                   </div>
                   <div ref={contactRef} className="elem">
-                    <div>
-                      {contactActive ? <Contact setLoading={setLoading} /> : ""}
-                    </div>
+                    <div>{contactActive ? <Contact /> : ""}</div>
                   </div>
                 </div>
               }
@@ -79,33 +83,29 @@ const App: React.FC = () => {
             <Route
               path="/about"
               element={
-                <div onLoad={() => setLoading(true)}>
-                  <About setLoading={setLoading} />
-                  <MySkills setLoading={setLoading} />
+                <div>
+                  <About />
+                  <MySkills />
                 </div>
               }
             />
             <Route
               path="/contact"
               element={
-                <div onLoad={() => setLoading(true)}>
-                  <Contact setLoading={setLoading} />
+                <div>
+                  <Contact />
                 </div>
               }
             />
             <Route
               path="/portfolio"
               element={
-                <div onLoad={() => setLoading(true)}>
-                  <Portfolio setLoading={setLoading} />
+                <div>
+                  <Portfolio />
                 </div>
               }
             />
           </Routes>
-
-          {/* 
-        
-          */}
         </div>
       </div>
     </Router>

@@ -36,7 +36,6 @@ $colorF: rgb(162, 44, 216);
         color: rgb(255, 47, 47);
         text-shadow: -3px -1px 1px rgb(255, 255, 255);
         line-height: 5rem;
-        letter-spacing: -1rem;
       }
     }
     p {
@@ -52,6 +51,7 @@ $colorF: rgb(162, 44, 216);
       overflow: hidden;
       display: block;
       position: relative;
+      margin-bottom: 2rem;
       div {
         display: flex;
         flex-direction: row;
@@ -93,6 +93,7 @@ $colorF: rgb(162, 44, 216);
     flex-direction: column;
     color: white;
     min-width: 30rem;
+    margin-bottom: 2rem;
     .skill {
       width: 70%;
       h3 {
@@ -150,13 +151,10 @@ $colorF: rgb(162, 44, 216);
     .content {
       h2 {
         font-size: 2rem;
+        strong {
+          font-size: 5rem;
+        }
       }
-      .skillImgs {
-        margin-bottom: 2rem;
-      }
-    }
-    .skills {
-      margin-bottom: 2rem;
     }
   }
 }

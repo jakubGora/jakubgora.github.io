@@ -52,7 +52,6 @@
   color: #ff2f2f;
   text-shadow: -3px -1px 1px white;
   line-height: 5rem;
-  letter-spacing: -1rem;
 }
 
 .MySkills .content p {
@@ -67,6 +66,7 @@
   overflow: hidden;
   display: block;
   position: relative;
+  margin-bottom: 2rem;
 }
 
 .MySkills .content .skillImgs div {
@@ -131,6 +131,7 @@
           flex-direction: column;
   color: white;
   min-width: 30rem;
+  margin-bottom: 2rem;
 }
 
 .MySkills .skills .skill {
@@ -216,11 +217,8 @@
   .MySkills .content h2 {
     font-size: 2rem;
   }
-  .MySkills .content .skillImgs {
-    margin-bottom: 2rem;
-  }
-  .MySkills .skills {
-    margin-bottom: 2rem;
+  .MySkills .content h2 strong {
+    font-size: 5rem;
   }
 }
 /*# sourceMappingURL=MySkills.css.map */

@@ -149,4 +149,16 @@
             transform: translateY(0%);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .Loading {
+    width: 100%;
+  }
+  .Loading .imgs img {
+    width: 4rem;
+  }
+  .Loading .loadingBar {
+    width: 50%;
+  }
+}
 /*# sourceMappingURL=Loading.css.map */

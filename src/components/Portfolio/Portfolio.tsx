@@ -6,21 +6,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faPaperclip } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
-interface IPortfolio {
-  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-function Portfolio({ setLoading }: IPortfolio) {
+function Portfolio() {
   const canie = require("../../img/canien.png");
   const memo = require("../../img/memory.png");
   const play = require("../../img/playapp.png");
   const unsplash = require("../../img/unsplashapp.png");
   const tie = require("../../img/tieapp.png");
-
-  useEffect(() => {
-    setLoading(true);
-  }, []);
 
   return (
     <div className="Portfolio">
