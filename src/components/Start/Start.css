@@ -329,7 +329,7 @@
     letter-spacing: normal;
   }
   .Start h2 {
-    width: 10rem;
+    display: none;
   }
 }
 
