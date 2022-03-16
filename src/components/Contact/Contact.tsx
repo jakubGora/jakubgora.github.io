@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import GoogleMapReact, { Props } from "google-map-react";
 import { useEffect, useRef, useState } from "react";
-
+import { useForm, ValidationError } from "@formspree/react";
 const AnyReactComponent = ({
   lat,
   lng,
@@ -52,6 +52,7 @@ const Contact: React.FC = () => {
     const elem = e as HTMLElement;
     elem.focus();
   };
+  const [state, handleSubmit] = useForm("mzbovvpr");
 
   const defaultProps = {
     center: {
@@ -101,50 +102,68 @@ const Contact: React.FC = () => {
           </div>
         </div>
         <h3>lub</h3>
-        <form>
-          <h3>Napisz do mnie</h3>
-          <div className="group">
-            <label
-              onClick={(e) => setFocus(e.currentTarget.firstChild)}
-              ref={nameRef}
-              htmlFor="name"
-            >
-              <input
-                onChange={(e) => setName(e.target.value)}
-                type="text"
-                name="name"
-                required
-              />
-            </label>
-            <label ref={emailRef} htmlFor="email">
-              <input
-                onChange={(e) => setEmail(e.target.value)}
-                type="email"
-                name="email"
-                required
-              />
-            </label>
-          </div>
+        {!state.succeeded ? (
+          <form onSubmit={handleSubmit}>
+            <h3>Napisz do mnie</h3>
+            <div className="group">
+              <label
+                onClick={(e) => setFocus(e.currentTarget.firstChild)}
+                ref={nameRef}
+                htmlFor="name"
+              >
+                <input
+                  onChange={(e) => setName(e.target.value)}
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                />
+              </label>
+              <label ref={emailRef} htmlFor="email">
+                <input
+                  onChange={(e) => setEmail(e.target.value)}
+                  type="email"
+                  name="email"
+                  required
+                />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
+                />
+              </label>
+            </div>
 
-          <label ref={msgRef} htmlFor="msg">
-            <textarea
-              name="msg"
-              cols={50}
-              rows={15}
-              onChange={(e) => setMsg(e.target.value)}
-            ></textarea>
-          </label>
-          <div className="btn">
-            <p>
-              {" "}
-              <FontAwesomeIcon
-                icon={faPhone}
-                fontSize="1.3rem"
-              ></FontAwesomeIcon>{" "}
-              Wyślij
-            </p>
+            <label ref={msgRef} htmlFor="message">
+              <textarea
+                name="message"
+                id="message"
+                cols={50}
+                rows={15}
+                onChange={(e) => setMsg(e.target.value)}
+              ></textarea>
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+              />
+            </label>
+            <button type="submit" disabled={state.submitting} className="btn">
+              <p>
+                {" "}
+                <FontAwesomeIcon
+                  icon={faPhone}
+                  fontSize="1.3rem"
+                ></FontAwesomeIcon>{" "}
+                Wyślij
+              </p>
+            </button>
+          </form>
+        ) : (
+          <div className="sended">
+            <h2>Wiadomość wysłana :D</h2>{" "}
           </div>
-        </form>
+        )}
       </div>
     </div>
   );

@@ -101,9 +101,22 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
         "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
         "Helvetica Neue", sans-serif;
+      a {
+        color: rgb(77, 184, 255);
+        list-style: none;
+        font-size: 1.2rem;
+        text-decoration: none;
+        transition: 1s ease;
+      }
+      a:hover {
+        color: red;
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
     }
   }
 }
+
 @keyframes fadeIn {
   0% {
     transform: translateX(-100vw);

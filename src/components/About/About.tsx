@@ -26,6 +26,9 @@ function About() {
             którym jednocześnie cały czas się dokształcam. Chciałbym w
             przyszłości tworzyć duże aplikację z których każdego dnia będą
             korzystać miliony użytkowników na całym świecie.
+            <br />
+            Zapraszam na swojego{" "}
+            <a href="https://github.com/jakubGora">githuba</a>.
           </p>
 
           <div className="btns">

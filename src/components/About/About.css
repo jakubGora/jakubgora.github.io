@@ -144,6 +144,21 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
+.About .content p a {
+  color: #4db8ff;
+  list-style: none;
+  font-size: 1.2rem;
+  text-decoration: none;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.About .content p a:hover {
+  color: red;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
 @-webkit-keyframes fadeIn {
   0% {
     -webkit-transform: translateX(-100vw);
