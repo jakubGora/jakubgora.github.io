@@ -120,3 +120,16 @@
     transform: translateY(0%);
   }
 }
+@media screen and (max-width: 600px) {
+  .Portfolio {
+    .gallery {
+      .project {
+        flex-direction: column;
+        img.object {
+          height: 50vh;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

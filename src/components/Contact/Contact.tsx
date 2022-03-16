@@ -8,6 +8,10 @@ import {
 import GoogleMapReact, { Props } from "google-map-react";
 import { useEffect, useRef, useState } from "react";
 
+interface IContact {
+  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
 const AnyReactComponent = ({
   lat,
   lng,
@@ -21,7 +25,7 @@ const AnyReactComponent = ({
     <FontAwesomeIcon icon={faLocationDot} color="black" fontSize="3rem" />
   </div>
 );
-const Contact: React.FC = () => {
+const Contact: React.FC<IContact> = ({ setLoading }) => {
   const [name, setName] = useState<string | undefined>();
   const [email, setEmail] = useState<string | undefined>();
   const [msg, setMsg] = useState<string | undefined>();
@@ -47,6 +51,10 @@ const Contact: React.FC = () => {
       msgRef.current?.classList.remove("notEmpty");
     }
   }, [name, email, msg]);
+
+  useEffect(() => {
+    setLoading(true);
+  }, []);
 
   const setFocus = (e: ChildNode | null) => {
     const elem = e as HTMLElement;

@@ -213,4 +213,18 @@
             transform: translateY(0%);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .Portfolio .gallery .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Portfolio .gallery .project img.object {
+    height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 /*# sourceMappingURL=Portfolio.css.map */

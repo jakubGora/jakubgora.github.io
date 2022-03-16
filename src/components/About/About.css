@@ -30,6 +30,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .About .content .btns {
@@ -113,6 +115,10 @@
   width: 50%;
 }
 
+.About .content .ilustr {
+  min-width: 320px;
+}
+
 .About .content .ilustr img {
   height: 100%;
   width: 100%;
@@ -171,6 +177,18 @@
   }
   50% {
     width: 0%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .About .content h2 {
+    font-size: 2rem;
+  }
+  .About .content h2 strong {
+    font-size: 5rem;
+  }
+  .About .content p {
+    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=About.css.map */

@@ -7,12 +7,20 @@ import {
 import { faPaperclip } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
 
-function Portfolio() {
+interface IPortfolio {
+  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+function Portfolio({ setLoading }: IPortfolio) {
   const canie = require("../../img/canien.png");
   const memo = require("../../img/memory.png");
   const play = require("../../img/playapp.png");
   const unsplash = require("../../img/unsplashapp.png");
   const tie = require("../../img/tieapp.png");
+
+  useEffect(() => {
+    setLoading(true);
+  }, []);
 
   return (
     <div className="Portfolio">
@@ -65,7 +73,6 @@ function Portfolio() {
           <img className="object" src={unsplash}></img>
         </div>
         <div style={{ width: "50%" }} className="project">
-          <img className="object" src={tie}></img>
           <div className="descr">
             {" "}
             <div>
@@ -102,9 +109,9 @@ function Portfolio() {
               ></FontAwesomeIcon>
             </div>
           </div>
+          <img className="object" src={tie}></img>
         </div>
         <div style={{ width: "50%" }} className="project">
-          <img className="object" src={play}></img>
           <div className="descr">
             {" "}
             <div>
@@ -141,6 +148,7 @@ function Portfolio() {
               ></FontAwesomeIcon>
             </div>
           </div>
+          <img className="object" src={play}></img>
         </div>
         <div className="project">
           <div className="descr">
@@ -187,7 +195,6 @@ function Portfolio() {
           ></img>
         </div>
         <div className="project">
-          <img className="object" src={canie}></img>
           <div className="descr">
             {" "}
             <div>
@@ -219,6 +226,7 @@ function Portfolio() {
               ></FontAwesomeIcon>
             </div>
           </div>
+          <img className="object" src={canie}></img>
         </div>
       </div>
       <a href="https://icons8.com/icon/uJM6fQYqDaZK/typescript">

@@ -211,4 +211,16 @@
             transform: translate3d(-48rem, 0, 0);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .MySkills .content h2 {
+    font-size: 2rem;
+  }
+  .MySkills .content .skillImgs {
+    margin-bottom: 2rem;
+  }
+  .MySkills .skills {
+    margin-bottom: 2rem;
+  }
+}
 /*# sourceMappingURL=MySkills.css.map */

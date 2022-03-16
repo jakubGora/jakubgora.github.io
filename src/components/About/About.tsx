@@ -2,7 +2,11 @@ import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./About.css";
 
-function About() {
+interface IAbout {
+  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+function About({ setLoading }: IAbout) {
   const imge = require("../../img/clip-programming.png");
 
   const loadSkills = () => {};

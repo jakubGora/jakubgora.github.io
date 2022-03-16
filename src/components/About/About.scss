@@ -17,6 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     .btns {
       display: flex;
       align-items: center;
@@ -75,6 +76,7 @@
       width: 50%;
     }
     .ilustr {
+      min-width: 320px;
       img {
         height: 100%;
         width: 100%;
@@ -116,5 +118,20 @@
   }
   50% {
     width: 0%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .About {
+    .content {
+      h2 {
+        font-size: 2rem;
+        strong {
+          font-size: 5rem;
+        }
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
   }
 }

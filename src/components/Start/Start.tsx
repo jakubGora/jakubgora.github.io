@@ -5,7 +5,15 @@ import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
-function Start() {
+interface IStart {
+  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+function Start({ setLoading }: IStart) {
+  useEffect(() => {
+    setLoading(true);
+  }, []);
+
   return (
     <div className="Start">
       <div>

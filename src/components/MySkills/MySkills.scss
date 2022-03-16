@@ -145,3 +145,18 @@ $colorF: rgb(162, 44, 216);
     transform: translate3d(-48rem, 0, 0);
   }
 }
+@media screen and (max-width: 600px) {
+  .MySkills {
+    .content {
+      h2 {
+        font-size: 2rem;
+      }
+      .skillImgs {
+        margin-bottom: 2rem;
+      }
+    }
+    .skills {
+      margin-bottom: 2rem;
+    }
+  }
+}
