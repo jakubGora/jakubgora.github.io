@@ -199,7 +199,7 @@
   width: 100%;
 }
 
-.Contact .content form label[for="msg"] {
+.Contact .content form label[for="message"] {
   height: 10rem;
 }
 
@@ -211,7 +211,7 @@
   content: "Email";
 }
 
-.Contact .content form label[for="msg"]::before {
+.Contact .content form label[for="message"]::before {
   content: "Message";
 }
 
