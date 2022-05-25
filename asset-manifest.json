@@ -1,19 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.372e2477.css",
-    "main.js": "/static/js/main.b912e46b.js",
+    "main.css": "/static/css/main.9a071826.css",
+    "main.js": "/static/js/main.9fb1413d.js",
+    "static/media/onSplash2.png": "/static/media/onSplash2.9f4d2c505dd782fa5b11.png",
     "static/media/unsplashapp.png": "/static/media/unsplashapp.457a31e50c1158f29ca3.png",
     "static/media/canien.png": "/static/media/canien.18fe5262d9094794e55f.png",
+    "static/media/Finow1.png": "/static/media/Finow1.fe1d564ca5bc6386c6da.png",
+    "static/media/2.png": "/static/media/2.f5bff01e6b2070cd25bf.png",
+    "static/media/1.png": "/static/media/1.b83b31dbc4c74ddaf905.png",
     "static/media/playapp.png": "/static/media/playapp.96379e61ca7c92909eab.png",
-    "static/media/tieapp.png": "/static/media/tieapp.b183f5e3cf250a9d918b.png",
+    "static/media/5.png": "/static/media/5.42e4063c9504bd3e54c5.png",
+    "static/media/4.png": "/static/media/4.562add126affaf837eb9.png",
+    "static/media/3.png": "/static/media/3.e8bdb3c6228dfa3911a3.png",
+    "static/media/6.png": "/static/media/6.9b1e77734034a8db49c0.png",
     "static/media/memory.png": "/static/media/memory.9212b71d895d3eae032f.png",
+    "static/media/Finow4.png": "/static/media/Finow4.a0ac16152938036153dc.png",
+    "static/media/Finow2.png": "/static/media/Finow2.da3c121c796f61229ff1.png",
     "static/media/clip-programming.png": "/static/media/clip-programming.ba704ff77e39094aa378.png",
+    "static/media/Finow3.png": "/static/media/Finow3.00de2df2669beed31c82.png",
+    "static/media/Microsoft-Access-Logo.png": "/static/media/Microsoft-Access-Logo.8fdc003bb1a88924e3a9.png",
+    "static/media/logo_finow.png": "/static/media/logo_finow.8ccac52d01b2f32b10c0.png",
     "index.html": "/index.html",
-    "main.372e2477.css.map": "/static/css/main.372e2477.css.map",
-    "main.b912e46b.js.map": "/static/js/main.b912e46b.js.map"
+    "main.9a071826.css.map": "/static/css/main.9a071826.css.map",
+    "main.9fb1413d.js.map": "/static/js/main.9fb1413d.js.map"
   },
   "entrypoints": [
-    "static/css/main.372e2477.css",
-    "static/js/main.b912e46b.js"
+    "static/css/main.9a071826.css",
+    "static/js/main.9fb1413d.js"
   ]
 }
