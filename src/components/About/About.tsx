@@ -21,11 +21,8 @@ function About() {
             parę lat próbowałem róznych technologi i języków między innymi
             tworzenia gier na Androida w Unity czy też robienia natywnych
             aplikacji mobilnych. Ostatecznie jednak najbardziej przypadło mi do
-            gustu tworzenie aplikacji frontendowych. Obecnie tworzę frontent
-            głównie wykorzystując bibliotekę React.js oraz język TypeScript w
-            którym jednocześnie cały czas się dokształcam. Chciałbym w
-            przyszłości tworzyć duże aplikację z których każdego dnia będą
-            korzystać miliony użytkowników na całym świecie.
+            gustu tworzenie aplikacji frontendowych. Obecnie współtworze aplikacje frotowe firmy STS S.A. w Angularze. W przyszłości chce rozwijać się w tym kierunku i tworzyć ciekawe projekty z których będę czerpał dużo satysfakcji.
+
             <br />
             Zapraszam na swojego{" "}
             <a href="https://github.com/jakubGora">githuba</a>.
@@ -41,7 +38,7 @@ function About() {
             <div
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/file/d/1yqLDav7_XE7itoMyUmneXCv2WZeQQdQl/view?usp=sharing",
+                  "https://drive.google.com/file/d/1hpyoMOdJXUYASIf1F0aA6Wgs1jkhb-Fv/view?usp=sharing",
                   "_blank"
                 )
               }
